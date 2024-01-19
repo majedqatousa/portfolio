@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+:root {
+    --main-font: 'Poppins', sans-serif;
+    --header-bg-color: #333; 
+    --navbar-bg-color: #2c3e50; 
+    --navbar-link-color: #fff; 
+    --navbar-link-hover-color: #ecf0f1; 
+    --section-bg-color: #ecf0f1; 
+    --section-text-color: #333; 
+    --footer-bg-color: #2c3e50; 
+    --footer-text-color: #fff; 
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.col{
+    flex: 1;
+}
+.col-3{
+    flex: 3;
+}
+.mt-3{
+    margin-top: 100px;
+}
+
+header, nav, section, footer {
+    padding: 10px 0;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--navbar-bg-color);
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navbar-link-color);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--navbar-link-hover-color);
+}
+
+.section {
+    background-color: var(--section-bg-color);
+    color: var(--section-text-color);
+    padding: 40px 0;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+}
+.circular-img {
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image maintains its aspect ratio and covers the entire container */
+}
+@media screen and (max-width: 768px) {
+    header, nav, section, footer {
+        padding: 20px 0;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+    .col-3{
+        flex: 100%;
+    }
+    .col{
+        flex: 100%;
+    }
+    .mt-3{
+        margin-top: 3px;
+    }
+}
